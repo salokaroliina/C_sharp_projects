@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using MySql.Data.MySqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,10 +13,14 @@ namespace GenshinImpactDatabase
 {
     public partial class Form1 : Form
     {
+
+        
         public Form1()
         {
             InitializeComponent();
         }
+
+      
 
         private void CloseAll(object sender, EventArgs e)
         {
@@ -55,6 +60,11 @@ namespace GenshinImpactDatabase
         private void CloseLB_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void AddCharacterBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
