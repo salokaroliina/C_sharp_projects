@@ -1,0 +1,11 @@
+C:\Users\salok\source\repos\C_sharp_projects\GenshinCharacterBuilder\GenshinCharacterBuilder\bin\Debug\GenshinCharacterBuilder.exe.config
+C:\Users\salok\source\repos\C_sharp_projects\GenshinCharacterBuilder\GenshinCharacterBuilder\bin\Debug\GenshinCharacterBuilder.exe
+C:\Users\salok\source\repos\C_sharp_projects\GenshinCharacterBuilder\GenshinCharacterBuilder\bin\Debug\GenshinCharacterBuilder.pdb
+C:\Users\salok\source\repos\C_sharp_projects\GenshinCharacterBuilder\GenshinCharacterBuilder\obj\Debug\GenshinCharacterBuilder.csproj.AssemblyReference.cache
+C:\Users\salok\source\repos\C_sharp_projects\GenshinCharacterBuilder\GenshinCharacterBuilder\obj\Debug\GenshinCharacterBuilder.csproj.SuggestedBindingRedirects.cache
+C:\Users\salok\source\repos\C_sharp_projects\GenshinCharacterBuilder\GenshinCharacterBuilder\obj\Debug\GenshinCharacterBuilder.Form1.resources
+C:\Users\salok\source\repos\C_sharp_projects\GenshinCharacterBuilder\GenshinCharacterBuilder\obj\Debug\GenshinCharacterBuilder.Properties.Resources.resources
+C:\Users\salok\source\repos\C_sharp_projects\GenshinCharacterBuilder\GenshinCharacterBuilder\obj\Debug\GenshinCharacterBuilder.csproj.GenerateResource.cache
+C:\Users\salok\source\repos\C_sharp_projects\GenshinCharacterBuilder\GenshinCharacterBuilder\obj\Debug\GenshinCharacterBuilder.csproj.CoreCompileInputs.cache
+C:\Users\salok\source\repos\C_sharp_projects\GenshinCharacterBuilder\GenshinCharacterBuilder\obj\Debug\GenshinCharacterBuilder.exe
+C:\Users\salok\source\repos\C_sharp_projects\GenshinCharacterBuilder\GenshinCharacterBuilder\obj\Debug\GenshinCharacterBuilder.pdb
