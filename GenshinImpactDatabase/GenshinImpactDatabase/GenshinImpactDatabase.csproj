@@ -89,6 +89,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CHARACTERS.cs" />
+    <Compile Include="CONNECT.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

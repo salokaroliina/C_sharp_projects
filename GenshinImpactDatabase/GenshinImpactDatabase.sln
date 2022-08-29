@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenshinImpactDatabase", "GenshinImpactDatabase\GenshinImpactDatabase.csproj", "{E3B11707-4926-4D36-95CF-0F72AE9BF267}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5BFA5C27-0BC1-489A-A1CF-669BA4CCEA5D}"
-	ProjectSection(SolutionItems) = preProject
-		CONNECT.cs = CONNECT.cs
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
