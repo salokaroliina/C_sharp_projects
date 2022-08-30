@@ -24,7 +24,6 @@ namespace GenshinImpactDatabase
             InitializeComponent();
         }
 
-      
 
         private void CloseAll(object sender, EventArgs e)
         {
@@ -41,11 +40,22 @@ namespace GenshinImpactDatabase
             HomeBtn.Visible = true;
         }
 
+
+        private void giveCharacters(object sender, EventArgs e)
+        {
+            CharactersDTG.DataSource = characters.GetCharacter();
+            CharactersDTG.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+            var datagridview = new DataGridView();
+            datagridview.RowTemplate.MinimumHeight = 125;
+        }
+
         private void CharactersBtn_Click(object sender, EventArgs e)
         {
             CloseAll(sender, e);
             CharactersPL.Visible = true;
             HomeBtn.Visible = true;
+
+            giveCharacters(sender,e);
         }
 
         private void StatsBtn_Click(object sender, EventArgs e)
@@ -69,26 +79,30 @@ namespace GenshinImpactDatabase
         private void AddCharacterBtn_Click(object sender, EventArgs e)
         {
             String name = NameTB.Text;
+            String stars = StarsCB.Text;
             String vision = VisionCB.Text;
             String region = RegionCB.Text;
             String weapon = WeaponCB.Text;
             String gender = GenderCB.Text;
             
 
-            if (name == "" || vision == "" || region == "" || weapon == "" || gender == "")
+            if (name == "" || stars == "" || vision == "" || region == "" || weapon == "" || gender == "")
             {
                 MessageBox.Show("Fill all the information!");
             }
             else
             {
-                Boolean NewFeedback = characters.AddCharacter(name,vision,region,weapon,gender);
+                Boolean NewFeedback = characters.AddCharacter(name,stars,vision,region,weapon,gender);
 
                 NameTB.Text = "";
+                StarsCB.Text = "";
                 VisionCB.Text = "";
                 RegionCB.Text = "";
                 WeaponCB.Text = "";
                 GenderCB.Text = "";
             }
         }
+
+        
     }
 }

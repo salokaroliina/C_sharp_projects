@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.HomeHeaderLB = new System.Windows.Forms.Label();
             this.AddNewBtn = new System.Windows.Forms.Button();
             this.CharactersBtn = new System.Windows.Forms.Button();
@@ -47,14 +51,18 @@
             this.AddNewHeaderLB = new System.Windows.Forms.Label();
             this.HomePL = new System.Windows.Forms.Panel();
             this.CharactersPL = new System.Windows.Forms.Panel();
+            this.CharactersDTG = new System.Windows.Forms.DataGridView();
             this.MyCharactersLB = new System.Windows.Forms.Label();
             this.StatsPL = new System.Windows.Forms.Panel();
             this.StatsLB = new System.Windows.Forms.Label();
             this.CloseLB = new System.Windows.Forms.Label();
             this.HomeBtn = new System.Windows.Forms.Button();
+            this.StarsLB = new System.Windows.Forms.Label();
+            this.StarsCB = new System.Windows.Forms.ComboBox();
             this.AddNewPL.SuspendLayout();
             this.HomePL.SuspendLayout();
             this.CharactersPL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CharactersDTG)).BeginInit();
             this.StatsPL.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,6 +112,10 @@
             // 
             // AddNewPL
             // 
+            this.AddNewPL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.AddNewPL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AddNewPL.Controls.Add(this.StarsCB);
+            this.AddNewPL.Controls.Add(this.StarsLB);
             this.AddNewPL.Controls.Add(this.AddCharacterBtn);
             this.AddNewPL.Controls.Add(this.GenderCB);
             this.AddNewPL.Controls.Add(this.WeaponCB);
@@ -141,7 +153,7 @@
             this.GenderCB.Items.AddRange(new object[] {
             "Man",
             "Woman"});
-            this.GenderCB.Location = new System.Drawing.Point(310, 440);
+            this.GenderCB.Location = new System.Drawing.Point(310, 437);
             this.GenderCB.Name = "GenderCB";
             this.GenderCB.Size = new System.Drawing.Size(420, 57);
             this.GenderCB.TabIndex = 10;
@@ -156,7 +168,7 @@
             "Claymore",
             "Polearm",
             "Catalyst"});
-            this.WeaponCB.Location = new System.Drawing.Point(310, 362);
+            this.WeaponCB.Location = new System.Drawing.Point(310, 366);
             this.WeaponCB.Name = "WeaponCB";
             this.WeaponCB.Size = new System.Drawing.Size(420, 57);
             this.WeaponCB.TabIndex = 9;
@@ -171,7 +183,7 @@
             "Inazuma",
             "Sumeru",
             "Snezhnaya"});
-            this.RegionCB.Location = new System.Drawing.Point(310, 284);
+            this.RegionCB.Location = new System.Drawing.Point(310, 295);
             this.RegionCB.Name = "RegionCB";
             this.RegionCB.Size = new System.Drawing.Size(420, 57);
             this.RegionCB.TabIndex = 8;
@@ -188,7 +200,7 @@
             "Geo",
             "Electro",
             "Dendro"});
-            this.VisionCB.Location = new System.Drawing.Point(310, 206);
+            this.VisionCB.Location = new System.Drawing.Point(310, 224);
             this.VisionCB.Name = "VisionCB";
             this.VisionCB.Size = new System.Drawing.Size(420, 57);
             this.VisionCB.TabIndex = 7;
@@ -196,7 +208,7 @@
             // NameTB
             // 
             this.NameTB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameTB.Location = new System.Drawing.Point(310, 138);
+            this.NameTB.Location = new System.Drawing.Point(310, 92);
             this.NameTB.Name = "NameTB";
             this.NameTB.Size = new System.Drawing.Size(420, 47);
             this.NameTB.TabIndex = 6;
@@ -205,7 +217,7 @@
             // 
             this.GenderLB.AutoSize = true;
             this.GenderLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GenderLB.Location = new System.Drawing.Point(178, 442);
+            this.GenderLB.Location = new System.Drawing.Point(178, 441);
             this.GenderLB.Name = "GenderLB";
             this.GenderLB.Size = new System.Drawing.Size(105, 49);
             this.GenderLB.TabIndex = 5;
@@ -215,7 +227,7 @@
             // 
             this.WeaponLB.AutoSize = true;
             this.WeaponLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WeaponLB.Location = new System.Drawing.Point(174, 366);
+            this.WeaponLB.Location = new System.Drawing.Point(174, 370);
             this.WeaponLB.Name = "WeaponLB";
             this.WeaponLB.Size = new System.Drawing.Size(115, 49);
             this.WeaponLB.TabIndex = 4;
@@ -225,7 +237,7 @@
             // 
             this.RegionLB.AutoSize = true;
             this.RegionLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegionLB.Location = new System.Drawing.Point(174, 290);
+            this.RegionLB.Location = new System.Drawing.Point(174, 299);
             this.RegionLB.Name = "RegionLB";
             this.RegionLB.Size = new System.Drawing.Size(102, 49);
             this.RegionLB.TabIndex = 3;
@@ -235,7 +247,7 @@
             // 
             this.VisionLB.AutoSize = true;
             this.VisionLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VisionLB.Location = new System.Drawing.Point(174, 214);
+            this.VisionLB.Location = new System.Drawing.Point(174, 228);
             this.VisionLB.Name = "VisionLB";
             this.VisionLB.Size = new System.Drawing.Size(95, 49);
             this.VisionLB.TabIndex = 2;
@@ -245,7 +257,7 @@
             // 
             this.NameLB.AutoSize = true;
             this.NameLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameLB.Location = new System.Drawing.Point(178, 138);
+            this.NameLB.Location = new System.Drawing.Point(178, 91);
             this.NameLB.Name = "NameLB";
             this.NameLB.Size = new System.Drawing.Size(91, 49);
             this.NameLB.TabIndex = 1;
@@ -263,6 +275,7 @@
             // 
             // HomePL
             // 
+            this.HomePL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.HomePL.Controls.Add(this.HomeHeaderLB);
             this.HomePL.Controls.Add(this.AddNewBtn);
             this.HomePL.Controls.Add(this.CharactersBtn);
@@ -275,6 +288,8 @@
             // 
             // CharactersPL
             // 
+            this.CharactersPL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.CharactersPL.Controls.Add(this.CharactersDTG);
             this.CharactersPL.Controls.Add(this.MyCharactersLB);
             this.CharactersPL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CharactersPL.Location = new System.Drawing.Point(0, 0);
@@ -283,11 +298,61 @@
             this.CharactersPL.TabIndex = 4;
             this.CharactersPL.Visible = false;
             // 
+            // CharactersDTG
+            // 
+            this.CharactersDTG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.CharactersDTG.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.CharactersDTG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CharactersDTG.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.CharactersDTG.ColumnHeadersHeight = 26;
+            this.CharactersDTG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CharactersDTG.DefaultCellStyle = dataGridViewCellStyle14;
+            this.CharactersDTG.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.CharactersDTG.GridColor = System.Drawing.SystemColors.Control;
+            this.CharactersDTG.Location = new System.Drawing.Point(3, 75);
+            this.CharactersDTG.MultiSelect = false;
+            this.CharactersDTG.Name = "CharactersDTG";
+            this.CharactersDTG.ReadOnly = true;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Uighur", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CharactersDTG.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            this.CharactersDTG.RowHeadersVisible = false;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Uighur", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            this.CharactersDTG.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            this.CharactersDTG.RowTemplate.Height = 24;
+            this.CharactersDTG.RowTemplate.ReadOnly = true;
+            this.CharactersDTG.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.CharactersDTG.Size = new System.Drawing.Size(961, 526);
+            this.CharactersDTG.TabIndex = 1;
+            // 
             // MyCharactersLB
             // 
             this.MyCharactersLB.AutoSize = true;
             this.MyCharactersLB.Font = new System.Drawing.Font("Microsoft Uighur", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MyCharactersLB.Location = new System.Drawing.Point(391, 9);
+            this.MyCharactersLB.Location = new System.Drawing.Point(363, 9);
             this.MyCharactersLB.Name = "MyCharactersLB";
             this.MyCharactersLB.Size = new System.Drawing.Size(216, 63);
             this.MyCharactersLB.TabIndex = 0;
@@ -295,6 +360,7 @@
             // 
             // StatsPL
             // 
+            this.StatsPL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.StatsPL.Controls.Add(this.StatsLB);
             this.StatsPL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.StatsPL.Location = new System.Drawing.Point(0, 0);
@@ -316,6 +382,8 @@
             // CloseLB
             // 
             this.CloseLB.AutoSize = true;
+            this.CloseLB.BackColor = System.Drawing.Color.Transparent;
+            this.CloseLB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CloseLB.Font = new System.Drawing.Font("Microsoft Uighur", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseLB.Location = new System.Drawing.Point(925, 10);
             this.CloseLB.Name = "CloseLB";
@@ -336,6 +404,28 @@
             this.HomeBtn.Visible = false;
             this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
+            // StarsLB
+            // 
+            this.StarsLB.AutoSize = true;
+            this.StarsLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StarsLB.Location = new System.Drawing.Point(178, 157);
+            this.StarsLB.Name = "StarsLB";
+            this.StarsLB.Size = new System.Drawing.Size(78, 49);
+            this.StarsLB.TabIndex = 12;
+            this.StarsLB.Text = "Stars:";
+            // 
+            // StarsCB
+            // 
+            this.StarsCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StarsCB.FormattingEnabled = true;
+            this.StarsCB.Items.AddRange(new object[] {
+            "★★★★",
+            "★★★★★"});
+            this.StarsCB.Location = new System.Drawing.Point(310, 153);
+            this.StarsCB.Name = "StarsCB";
+            this.StarsCB.Size = new System.Drawing.Size(420, 57);
+            this.StarsCB.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,9 +433,9 @@
             this.ClientSize = new System.Drawing.Size(968, 605);
             this.Controls.Add(this.CloseLB);
             this.Controls.Add(this.HomeBtn);
-            this.Controls.Add(this.AddNewPL);
             this.Controls.Add(this.HomePL);
             this.Controls.Add(this.CharactersPL);
+            this.Controls.Add(this.AddNewPL);
             this.Controls.Add(this.StatsPL);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
@@ -356,6 +446,7 @@
             this.HomePL.PerformLayout();
             this.CharactersPL.ResumeLayout(false);
             this.CharactersPL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CharactersDTG)).EndInit();
             this.StatsPL.ResumeLayout(false);
             this.StatsPL.PerformLayout();
             this.ResumeLayout(false);
@@ -389,6 +480,9 @@
         private System.Windows.Forms.Label VisionLB;
         private System.Windows.Forms.Label NameLB;
         private System.Windows.Forms.Button AddCharacterBtn;
+        private System.Windows.Forms.DataGridView CharactersDTG;
+        private System.Windows.Forms.ComboBox StarsCB;
+        private System.Windows.Forms.Label StarsLB;
     }
 }
 

@@ -13,20 +13,21 @@ namespace GenshinImpactDatabase
     {
         CONNECT connection = new CONNECT();
 
-        public bool AddCharacter(String name, String vision, String region, String weapon, String gender)
+        public bool AddCharacter(String Name, String Stars,String Vision, String Region, String Weapon, String Gender)
         {
             MySqlCommand myCommand = new MySqlCommand();
             String addChar = "INSERT INTO characters " +
-                "(name,vision,region,weapon,gender) " +
-                "VALUES (@name,@vis,@reg,@wpn,@gndr);";
+                "(name,stars,vision,region,weapon,gender) " +
+                "VALUES (@name,@stars,@vis,@reg,@wpn,@gndr);";
             myCommand.CommandText = addChar;
             myCommand.Connection = connection.Connection();
 
-            myCommand.Parameters.Add("@name", MySqlDbType.VarChar).Value = name;
-            myCommand.Parameters.Add("@vis", MySqlDbType.VarChar).Value = vision;
-            myCommand.Parameters.Add("@reg", MySqlDbType.VarChar).Value = region;
-            myCommand.Parameters.Add("@wpn", MySqlDbType.VarChar).Value = weapon;
-            myCommand.Parameters.Add("@gndr", MySqlDbType.VarChar).Value = gender;
+            myCommand.Parameters.Add("@name", MySqlDbType.VarChar).Value = Name;
+            myCommand.Parameters.Add("@stars", MySqlDbType.VarChar).Value = Stars;
+            myCommand.Parameters.Add("@vis", MySqlDbType.VarChar).Value = Vision;
+            myCommand.Parameters.Add("@reg", MySqlDbType.VarChar).Value = Region;
+            myCommand.Parameters.Add("@wpn", MySqlDbType.VarChar).Value = Weapon;
+            myCommand.Parameters.Add("@gndr", MySqlDbType.VarChar).Value = Gender;
             MessageBox.Show("New character added!");
 
             connection.OpenConnection();
@@ -45,7 +46,7 @@ namespace GenshinImpactDatabase
         public bool CheckCharacter(string name)
         {
             connection.OpenConnection();
-            MySqlCommand mycommand = new MySqlCommand("SELECT name FROM characters WHERW name = '" + name + "'", connection.Connection());
+            MySqlCommand mycommand = new MySqlCommand("SELECT name FROM characters WHERE name = '" + name + "'", connection.Connection());
 
             var word = (string)mycommand.ExecuteScalar();
             connection.CloseConnection();
@@ -63,7 +64,7 @@ namespace GenshinImpactDatabase
 
         public DataTable GetCharacter()
         {
-            MySqlCommand MyCommand = new MySqlCommand("SELECT name,vision,region,weapon,gender FROM characters", connection.Connection());
+            MySqlCommand MyCommand = new MySqlCommand("SELECT Name,Stars,Vision,Region,Weapon,Gender FROM characters", connection.Connection());
             MySqlDataAdapter MyAdapter = new MySqlDataAdapter();
             DataTable MyTable = new DataTable();
 
@@ -73,5 +74,6 @@ namespace GenshinImpactDatabase
             return MyTable;
         }
 
+      
     }
 }
