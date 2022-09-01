@@ -1,6 +1,6 @@
 ﻿namespace GenshinImpactDatabase
 {
-    partial class Form1
+    partial class GenshinImpactDB
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.HomeHeaderLB = new System.Windows.Forms.Label();
             this.AddNewBtn = new System.Windows.Forms.Button();
             this.CharactersBtn = new System.Windows.Forms.Button();
             this.StatsBtn = new System.Windows.Forms.Button();
             this.AddNewPL = new System.Windows.Forms.Panel();
+            this.StarsCB = new System.Windows.Forms.ComboBox();
+            this.StarsLB = new System.Windows.Forms.Label();
             this.AddCharacterBtn = new System.Windows.Forms.Button();
             this.GenderCB = new System.Windows.Forms.ComboBox();
             this.WeaponCB = new System.Windows.Forms.ComboBox();
@@ -55,15 +57,28 @@
             this.MyCharactersLB = new System.Windows.Forms.Label();
             this.StatsPL = new System.Windows.Forms.Panel();
             this.StatsLB = new System.Windows.Forms.Label();
-            this.CloseLB = new System.Windows.Forms.Label();
             this.HomeBtn = new System.Windows.Forms.Button();
-            this.StarsLB = new System.Windows.Forms.Label();
-            this.StarsCB = new System.Windows.Forms.ComboBox();
+            this.EditCharacterPL = new System.Windows.Forms.Panel();
+            this.BackBtn = new System.Windows.Forms.Button();
+            this.CharNameTB = new System.Windows.Forms.TextBox();
+            this.EditStarsCB = new System.Windows.Forms.ComboBox();
+            this.EditVisCB = new System.Windows.Forms.ComboBox();
+            this.EditRegCB = new System.Windows.Forms.ComboBox();
+            this.EditWeaponCB = new System.Windows.Forms.ComboBox();
+            this.EditGenderCB = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.SaveEditBtn = new System.Windows.Forms.Button();
             this.AddNewPL.SuspendLayout();
             this.HomePL.SuspendLayout();
             this.CharactersPL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CharactersDTG)).BeginInit();
             this.StatsPL.SuspendLayout();
+            this.EditCharacterPL.SuspendLayout();
             this.SuspendLayout();
             // 
             // HomeHeaderLB
@@ -101,13 +116,14 @@
             // 
             // StatsBtn
             // 
+            this.StatsBtn.BackColor = System.Drawing.Color.Transparent;
             this.StatsBtn.Font = new System.Drawing.Font("Microsoft Uighur", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StatsBtn.Location = new System.Drawing.Point(368, 377);
             this.StatsBtn.Name = "StatsBtn";
             this.StatsBtn.Size = new System.Drawing.Size(239, 51);
             this.StatsBtn.TabIndex = 3;
             this.StatsBtn.Text = "Stats for nerds";
-            this.StatsBtn.UseVisualStyleBackColor = true;
+            this.StatsBtn.UseVisualStyleBackColor = false;
             this.StatsBtn.Click += new System.EventHandler(this.StatsBtn_Click);
             // 
             // AddNewPL
@@ -135,6 +151,28 @@
             this.AddNewPL.TabIndex = 4;
             this.AddNewPL.Visible = false;
             // 
+            // StarsCB
+            // 
+            this.StarsCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StarsCB.FormattingEnabled = true;
+            this.StarsCB.Items.AddRange(new object[] {
+            "★★★★",
+            "★★★★★"});
+            this.StarsCB.Location = new System.Drawing.Point(310, 153);
+            this.StarsCB.Name = "StarsCB";
+            this.StarsCB.Size = new System.Drawing.Size(420, 57);
+            this.StarsCB.TabIndex = 13;
+            // 
+            // StarsLB
+            // 
+            this.StarsLB.AutoSize = true;
+            this.StarsLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StarsLB.Location = new System.Drawing.Point(178, 157);
+            this.StarsLB.Name = "StarsLB";
+            this.StarsLB.Size = new System.Drawing.Size(78, 49);
+            this.StarsLB.TabIndex = 12;
+            this.StarsLB.Text = "Stars:";
+            // 
             // AddCharacterBtn
             // 
             this.AddCharacterBtn.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -151,8 +189,8 @@
             this.GenderCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GenderCB.FormattingEnabled = true;
             this.GenderCB.Items.AddRange(new object[] {
-            "Man",
-            "Woman"});
+            "Male",
+            "Female"});
             this.GenderCB.Location = new System.Drawing.Point(310, 437);
             this.GenderCB.Name = "GenderCB";
             this.GenderCB.Size = new System.Drawing.Size(420, 57);
@@ -182,7 +220,8 @@
             "Liyue",
             "Inazuma",
             "Sumeru",
-            "Snezhnaya"});
+            "Snezhnaya",
+            "None"});
             this.RegionCB.Location = new System.Drawing.Point(310, 295);
             this.RegionCB.Name = "RegionCB";
             this.RegionCB.Size = new System.Drawing.Size(420, 57);
@@ -199,7 +238,8 @@
             "Pyro",
             "Geo",
             "Electro",
-            "Dendro"});
+            "Dendro",
+            "All"});
             this.VisionCB.Location = new System.Drawing.Point(310, 224);
             this.VisionCB.Name = "VisionCB";
             this.VisionCB.Size = new System.Drawing.Size(420, 57);
@@ -303,50 +343,50 @@
             this.CharactersDTG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.CharactersDTG.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CharactersDTG.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.CharactersDTG.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CharactersDTG.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.CharactersDTG.ColumnHeadersHeight = 26;
             this.CharactersDTG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.CharactersDTG.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Uighur", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CharactersDTG.DefaultCellStyle = dataGridViewCellStyle10;
             this.CharactersDTG.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.CharactersDTG.GridColor = System.Drawing.SystemColors.Control;
             this.CharactersDTG.Location = new System.Drawing.Point(3, 75);
             this.CharactersDTG.MultiSelect = false;
             this.CharactersDTG.Name = "CharactersDTG";
-            this.CharactersDTG.ReadOnly = true;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Uighur", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Purple;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.CharactersDTG.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Uighur", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Purple;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CharactersDTG.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.CharactersDTG.RowHeadersVisible = false;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Uighur", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
-            this.CharactersDTG.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Uighur", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            this.CharactersDTG.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.CharactersDTG.RowTemplate.Height = 24;
             this.CharactersDTG.RowTemplate.ReadOnly = true;
             this.CharactersDTG.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.CharactersDTG.Size = new System.Drawing.Size(961, 526);
             this.CharactersDTG.TabIndex = 1;
+            this.CharactersDTG.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CharactersDTG_CellContentDoubleClick);
             // 
             // MyCharactersLB
             // 
@@ -379,67 +419,219 @@
             this.StatsLB.TabIndex = 0;
             this.StatsLB.Text = "Stats for nerds";
             // 
-            // CloseLB
-            // 
-            this.CloseLB.AutoSize = true;
-            this.CloseLB.BackColor = System.Drawing.Color.Transparent;
-            this.CloseLB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CloseLB.Font = new System.Drawing.Font("Microsoft Uighur", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CloseLB.Location = new System.Drawing.Point(925, 10);
-            this.CloseLB.Name = "CloseLB";
-            this.CloseLB.Size = new System.Drawing.Size(33, 42);
-            this.CloseLB.TabIndex = 4;
-            this.CloseLB.Text = "X";
-            this.CloseLB.Click += new System.EventHandler(this.CloseLB_Click);
-            // 
             // HomeBtn
             // 
+            this.HomeBtn.BackColor = System.Drawing.SystemColors.Control;
             this.HomeBtn.Font = new System.Drawing.Font("Microsoft Uighur", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeBtn.Location = new System.Drawing.Point(0, 0);
             this.HomeBtn.Name = "HomeBtn";
             this.HomeBtn.Size = new System.Drawing.Size(84, 41);
             this.HomeBtn.TabIndex = 4;
             this.HomeBtn.Text = "Home";
-            this.HomeBtn.UseVisualStyleBackColor = true;
+            this.HomeBtn.UseVisualStyleBackColor = false;
             this.HomeBtn.Visible = false;
             this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
-            // StarsLB
+            // EditCharacterPL
             // 
-            this.StarsLB.AutoSize = true;
-            this.StarsLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StarsLB.Location = new System.Drawing.Point(178, 157);
-            this.StarsLB.Name = "StarsLB";
-            this.StarsLB.Size = new System.Drawing.Size(78, 49);
-            this.StarsLB.TabIndex = 12;
-            this.StarsLB.Text = "Stars:";
+            this.EditCharacterPL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.EditCharacterPL.Controls.Add(this.BackBtn);
+            this.EditCharacterPL.Controls.Add(this.CharNameTB);
+            this.EditCharacterPL.Controls.Add(this.EditStarsCB);
+            this.EditCharacterPL.Controls.Add(this.EditVisCB);
+            this.EditCharacterPL.Controls.Add(this.EditRegCB);
+            this.EditCharacterPL.Controls.Add(this.EditWeaponCB);
+            this.EditCharacterPL.Controls.Add(this.EditGenderCB);
+            this.EditCharacterPL.Controls.Add(this.label1);
+            this.EditCharacterPL.Controls.Add(this.label2);
+            this.EditCharacterPL.Controls.Add(this.label3);
+            this.EditCharacterPL.Controls.Add(this.label4);
+            this.EditCharacterPL.Controls.Add(this.label5);
+            this.EditCharacterPL.Controls.Add(this.label6);
+            this.EditCharacterPL.Controls.Add(this.SaveEditBtn);
+            this.EditCharacterPL.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EditCharacterPL.Location = new System.Drawing.Point(0, 0);
+            this.EditCharacterPL.Name = "EditCharacterPL";
+            this.EditCharacterPL.Size = new System.Drawing.Size(968, 605);
+            this.EditCharacterPL.TabIndex = 2;
             // 
-            // StarsCB
+            // BackBtn
             // 
-            this.StarsCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StarsCB.FormattingEnabled = true;
-            this.StarsCB.Items.AddRange(new object[] {
+            this.BackBtn.Font = new System.Drawing.Font("Microsoft Uighur", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackBtn.Location = new System.Drawing.Point(0, 47);
+            this.BackBtn.Name = "BackBtn";
+            this.BackBtn.Size = new System.Drawing.Size(84, 43);
+            this.BackBtn.TabIndex = 14;
+            this.BackBtn.Text = "Back";
+            this.BackBtn.UseVisualStyleBackColor = true;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
+            // 
+            // CharNameTB
+            // 
+            this.CharNameTB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharNameTB.Location = new System.Drawing.Point(290, 65);
+            this.CharNameTB.Name = "CharNameTB";
+            this.CharNameTB.Size = new System.Drawing.Size(420, 47);
+            this.CharNameTB.TabIndex = 12;
+            // 
+            // EditStarsCB
+            // 
+            this.EditStarsCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditStarsCB.FormattingEnabled = true;
+            this.EditStarsCB.Items.AddRange(new object[] {
             "★★★★",
             "★★★★★"});
-            this.StarsCB.Location = new System.Drawing.Point(310, 153);
-            this.StarsCB.Name = "StarsCB";
-            this.StarsCB.Size = new System.Drawing.Size(420, 57);
-            this.StarsCB.TabIndex = 13;
+            this.EditStarsCB.Location = new System.Drawing.Point(290, 129);
+            this.EditStarsCB.Name = "EditStarsCB";
+            this.EditStarsCB.Size = new System.Drawing.Size(420, 57);
+            this.EditStarsCB.TabIndex = 7;
             // 
-            // Form1
+            // EditVisCB
+            // 
+            this.EditVisCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditVisCB.FormattingEnabled = true;
+            this.EditVisCB.Items.AddRange(new object[] {
+            "Anemo",
+            "Cryo",
+            "Hydro",
+            "Pyro",
+            "Geo",
+            "Electro",
+            "Dendro",
+            "All"});
+            this.EditVisCB.Location = new System.Drawing.Point(290, 208);
+            this.EditVisCB.Name = "EditVisCB";
+            this.EditVisCB.Size = new System.Drawing.Size(420, 57);
+            this.EditVisCB.TabIndex = 6;
+            // 
+            // EditRegCB
+            // 
+            this.EditRegCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditRegCB.FormattingEnabled = true;
+            this.EditRegCB.Items.AddRange(new object[] {
+            "Mondstadt",
+            "Liyue",
+            "Inazuma",
+            "Sumeru",
+            "Snezhnaya",
+            "None"});
+            this.EditRegCB.Location = new System.Drawing.Point(290, 288);
+            this.EditRegCB.Name = "EditRegCB";
+            this.EditRegCB.Size = new System.Drawing.Size(420, 57);
+            this.EditRegCB.TabIndex = 8;
+            // 
+            // EditWeaponCB
+            // 
+            this.EditWeaponCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditWeaponCB.FormattingEnabled = true;
+            this.EditWeaponCB.Items.AddRange(new object[] {
+            "Sword",
+            "Bow",
+            "Claymore",
+            "Polearm",
+            "Catalyst"});
+            this.EditWeaponCB.Location = new System.Drawing.Point(290, 370);
+            this.EditWeaponCB.Name = "EditWeaponCB";
+            this.EditWeaponCB.Size = new System.Drawing.Size(420, 57);
+            this.EditWeaponCB.TabIndex = 9;
+            // 
+            // EditGenderCB
+            // 
+            this.EditGenderCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditGenderCB.FormattingEnabled = true;
+            this.EditGenderCB.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.EditGenderCB.Location = new System.Drawing.Point(290, 452);
+            this.EditGenderCB.Name = "EditGenderCB";
+            this.EditGenderCB.Size = new System.Drawing.Size(420, 57);
+            this.EditGenderCB.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(168, 456);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 49);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Gender:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(168, 374);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(115, 49);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Weapon:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(168, 133);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(78, 49);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Stars:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(168, 292);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(102, 49);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Region:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(168, 212);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(95, 49);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Vision:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(168, 64);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 49);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Name:";
+            // 
+            // SaveEditBtn
+            // 
+            this.SaveEditBtn.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveEditBtn.Location = new System.Drawing.Point(424, 531);
+            this.SaveEditBtn.Name = "SaveEditBtn";
+            this.SaveEditBtn.Size = new System.Drawing.Size(124, 49);
+            this.SaveEditBtn.TabIndex = 11;
+            this.SaveEditBtn.Text = "Save";
+            this.SaveEditBtn.UseVisualStyleBackColor = true;
+            this.SaveEditBtn.Click += new System.EventHandler(this.SaveEditBtn_Click);
+            // 
+            // GenshinImpactDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(968, 605);
-            this.Controls.Add(this.CloseLB);
             this.Controls.Add(this.HomeBtn);
             this.Controls.Add(this.HomePL);
-            this.Controls.Add(this.CharactersPL);
             this.Controls.Add(this.AddNewPL);
+            this.Controls.Add(this.CharactersPL);
+            this.Controls.Add(this.EditCharacterPL);
             this.Controls.Add(this.StatsPL);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "GenshinImpactDB";
+            this.Text = "Genshin Impact Database";
             this.AddNewPL.ResumeLayout(false);
             this.AddNewPL.PerformLayout();
             this.HomePL.ResumeLayout(false);
@@ -449,8 +641,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.CharactersDTG)).EndInit();
             this.StatsPL.ResumeLayout(false);
             this.StatsPL.PerformLayout();
+            this.EditCharacterPL.ResumeLayout(false);
+            this.EditCharacterPL.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -467,7 +660,6 @@
         private System.Windows.Forms.Label MyCharactersLB;
         private System.Windows.Forms.Panel StatsPL;
         private System.Windows.Forms.Label StatsLB;
-        private System.Windows.Forms.Label CloseLB;
         private System.Windows.Forms.Button HomeBtn;
         private System.Windows.Forms.ComboBox GenderCB;
         private System.Windows.Forms.ComboBox WeaponCB;
@@ -483,6 +675,21 @@
         private System.Windows.Forms.DataGridView CharactersDTG;
         private System.Windows.Forms.ComboBox StarsCB;
         private System.Windows.Forms.Label StarsLB;
+        private System.Windows.Forms.Panel EditCharacterPL;
+        private System.Windows.Forms.Button SaveEditBtn;
+        private System.Windows.Forms.ComboBox EditGenderCB;
+        private System.Windows.Forms.ComboBox EditWeaponCB;
+        private System.Windows.Forms.ComboBox EditRegCB;
+        private System.Windows.Forms.ComboBox EditStarsCB;
+        private System.Windows.Forms.ComboBox EditVisCB;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox CharNameTB;
+        private System.Windows.Forms.Button BackBtn;
     }
 }
 

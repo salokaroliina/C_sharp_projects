@@ -74,6 +74,6 @@ namespace GenshinImpactDatabase
             return MyTable;
         }
 
-      
+       
     }
 }

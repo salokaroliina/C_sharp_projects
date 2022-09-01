@@ -12,14 +12,12 @@ using System.IO;
 
 namespace GenshinImpactDatabase
 {
-    public partial class Form1 : Form
+    public partial class GenshinImpactDB : Form
     {
         CHARACTERS characters = new CHARACTERS();
         MySqlConnection connection = new MySqlConnection("datasource=localhost; port=3306;username=root;password=;database=" + "studypoint" + ";SSL Mode = None");
-        MySqlCommand command;
-        MySqlDataAdapter da;
 
-        public Form1()
+        public GenshinImpactDB()
         {
             InitializeComponent();
         }
@@ -31,6 +29,7 @@ namespace GenshinImpactDatabase
             AddNewPL.Visible = false;
             CharactersPL.Visible = false;
             StatsPL.Visible = false;
+            EditCharacterPL.Visible = false;
         }
 
         private void AddNewBtn_Click(object sender, EventArgs e)
@@ -69,12 +68,15 @@ namespace GenshinImpactDatabase
         {
             HomePL.Visible = true;
             HomeBtn.Visible = false;
+
+            NameTB.Text = "";
+            StarsCB.Text = "";
+            VisionCB.Text = "";
+            RegionCB.Text = "";
+            WeaponCB.Text = "";
+            GenderCB.Text = "";
         }
 
-        private void CloseLB_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
 
         private void AddCharacterBtn_Click(object sender, EventArgs e)
         {
@@ -86,9 +88,13 @@ namespace GenshinImpactDatabase
             String gender = GenderCB.Text;
             
 
-            if (name == "" || stars == "" || vision == "" || region == "" || weapon == "" || gender == "")
+            if (name.Trim().Equals("") || stars.Trim().Equals("") || vision.Trim().Equals("") || region.Trim().Equals("") || weapon.Trim().Equals("") || gender.Trim().Equals(""))
             {
                 MessageBox.Show("Fill all the information!");
+            }
+            else if (characters.CheckCharacter(name))
+            {
+                MessageBox.Show("Character already exists");
             }
             else
             {
@@ -103,6 +109,35 @@ namespace GenshinImpactDatabase
             }
         }
 
-        
+        private void CharactersDTG_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CloseAll(sender, e);
+            EditCharacterPL.Visible = true;
+            HomeBtn.Visible = true;
+
+            CharNameTB.Text = CharactersDTG.CurrentRow.Cells[0].Value.ToString();
+            EditStarsCB.Text = CharactersDTG.CurrentRow.Cells[1].Value.ToString();
+            EditVisCB.Text = CharactersDTG.CurrentRow.Cells[2].Value.ToString();
+            EditRegCB.Text = CharactersDTG.CurrentRow.Cells[3].Value.ToString();
+            EditWeaponCB.Text = CharactersDTG.CurrentRow.Cells[4].Value.ToString();
+            EditGenderCB.Text = CharactersDTG.CurrentRow.Cells[5].Value.ToString();
+        }
+
+
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            CloseAll(sender, e);
+            CharactersPL.Visible = true;
+            HomeBtn.Visible = true;
+
+            giveCharacters(sender, e);
+        }
+
+        private void SaveEditBtn_Click(object sender, EventArgs e)
+        {
+            
+
+
+        }
     }
 }

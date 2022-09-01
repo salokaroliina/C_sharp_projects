@@ -11,7 +11,7 @@ namespace GenshinImpactDatabase
     internal class CONNECT
     {
 
-
+        // NEW CONNECTION TO DATABASE
         private MySqlConnection _connection = new MySqlConnection("datasource=localhost; port=3306;username=root;password=;database=" + "genshinimpactdb" + ";SSL Mode = None");
 
         public MySqlConnection Connection()
@@ -19,6 +19,7 @@ namespace GenshinImpactDatabase
             return _connection;
         }
 
+        // OPENS CONNECTION
         public void OpenConnection()
         {
             if (_connection.State == ConnectionState.Closed)
@@ -28,6 +29,7 @@ namespace GenshinImpactDatabase
 
         }
 
+        // CLOSES CONNECTION
         public void CloseConnection()
         {
             if (_connection.State == ConnectionState.Open)

@@ -3,7 +3,6 @@ C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpact
 C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\bin\Debug\GenshinImpactDatabase.pdb
 C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\obj\Debug\GenshinImpactDatabase.csproj.AssemblyReference.cache
 C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\obj\Debug\GenshinImpactDatabase.csproj.SuggestedBindingRedirects.cache
-C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\obj\Debug\GenshinImpactDatabase.Form1.resources
 C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\obj\Debug\GenshinImpactDatabase.Properties.Resources.resources
 C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\obj\Debug\GenshinImpactDatabase.csproj.GenerateResource.cache
 C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\obj\Debug\GenshinImpactDatabase.csproj.CoreCompileInputs.cache
@@ -33,3 +32,4 @@ C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpact
 C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\obj\Debug\GenshinImpactDatabase.csproj.CopyComplete
+C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\obj\Debug\GenshinImpactDatabase.GenshinImpactDB.resources
