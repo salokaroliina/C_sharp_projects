@@ -14,8 +14,9 @@ namespace GenshinImpactDatabase
 {
     public partial class GenshinImpactDB : Form
     {
-        CHARACTERS characters = new CHARACTERS();
+        
         MySqlConnection connection = new MySqlConnection("datasource=localhost; port=3306;username=root;password=;database=" + "studypoint" + ";SSL Mode = None");
+        CHARACTERS characters = new CHARACTERS();
 
         public GenshinImpactDB()
         {
@@ -80,25 +81,25 @@ namespace GenshinImpactDatabase
 
         private void AddCharacterBtn_Click(object sender, EventArgs e)
         {
-            String name = NameTB.Text;
-            String stars = StarsCB.Text;
-            String vision = VisionCB.Text;
-            String region = RegionCB.Text;
-            String weapon = WeaponCB.Text;
-            String gender = GenderCB.Text;
+            String Name = NameTB.Text;
+            String Stars = StarsCB.Text;
+            String Vision = VisionCB.Text;
+            String Region = RegionCB.Text;
+            String Weapon = WeaponCB.Text;
+            String Gender = GenderCB.Text;
             
 
-            if (name.Trim().Equals("") || stars.Trim().Equals("") || vision.Trim().Equals("") || region.Trim().Equals("") || weapon.Trim().Equals("") || gender.Trim().Equals(""))
+            if (Name.Trim().Equals("") || Stars.Trim().Equals("") || Vision.Trim().Equals("") || Region.Trim().Equals("") || Weapon.Trim().Equals("") || Gender.Trim().Equals(""))
             {
                 MessageBox.Show("Fill all the information!");
             }
-            else if (characters.CheckCharacter(name))
+            else if (characters.CheckCharacter(Name))
             {
                 MessageBox.Show("Character already exists");
             }
             else
             {
-                Boolean NewFeedback = characters.AddCharacter(name,stars,vision,region,weapon,gender);
+                Boolean NewCharAdded = characters.AddCharacter(Name,Stars,Vision,Region,Weapon,Gender);
 
                 NameTB.Text = "";
                 StarsCB.Text = "";
@@ -115,12 +116,13 @@ namespace GenshinImpactDatabase
             EditCharacterPL.Visible = true;
             HomeBtn.Visible = true;
 
-            CharNameTB.Text = CharactersDTG.CurrentRow.Cells[0].Value.ToString();
-            EditStarsCB.Text = CharactersDTG.CurrentRow.Cells[1].Value.ToString();
-            EditVisCB.Text = CharactersDTG.CurrentRow.Cells[2].Value.ToString();
-            EditRegCB.Text = CharactersDTG.CurrentRow.Cells[3].Value.ToString();
-            EditWeaponCB.Text = CharactersDTG.CurrentRow.Cells[4].Value.ToString();
-            EditGenderCB.Text = CharactersDTG.CurrentRow.Cells[5].Value.ToString();
+            CharIDTB.Text = CharactersDTG.CurrentRow.Cells[0].Value.ToString();
+            CharNameTB.Text = CharactersDTG.CurrentRow.Cells[1].Value.ToString();
+            EditStarsCB.Text = CharactersDTG.CurrentRow.Cells[2].Value.ToString();
+            EditVisCB.Text = CharactersDTG.CurrentRow.Cells[3].Value.ToString();
+            EditRegCB.Text = CharactersDTG.CurrentRow.Cells[4].Value.ToString();
+            EditWeaponCB.Text = CharactersDTG.CurrentRow.Cells[5].Value.ToString();
+            EditGenderCB.Text = CharactersDTG.CurrentRow.Cells[6].Value.ToString();
         }
 
 
@@ -135,9 +137,32 @@ namespace GenshinImpactDatabase
 
         private void SaveEditBtn_Click(object sender, EventArgs e)
         {
-            
+            int CharID = Int32.Parse(CharIDTB.Text);
+            String Name = CharNameTB.Text;
+            String Stars = EditStarsCB.Text;
+            String Vision = EditVisCB.Text;
+            String Region = EditRegCB.Text;
+            String Weapon = EditWeaponCB.Text;
+            String Gender = EditGenderCB.Text;
 
+            if (Name.Trim().Equals(""))
+            {
+                MessageBox.Show("Give the name");
+            }
+            else
+            {
+                Boolean SaveEdit = characters.EditCharacter(Name, Stars, Vision, Region, Weapon, Gender,CharID);
 
+                if (SaveEdit)
+                {
+                    MessageBox.Show("Yahoo you fucker");
+                }
+                else
+                {
+                    MessageBox.Show("Boo you fucker");
+                }
+                CharactersDTG.DataSource = characters.GetCharacter();
+            }
         }
     }
 }
