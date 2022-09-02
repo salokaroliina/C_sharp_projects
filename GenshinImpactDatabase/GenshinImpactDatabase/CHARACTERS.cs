@@ -64,7 +64,7 @@ namespace GenshinImpactDatabase
 
         public DataTable GetCharacter()
         {
-            MySqlCommand MyCommand = new MySqlCommand("SELECT CharID,Name,Stars,Vision,Region,Weapon,Gender FROM characters", connection.Connection());
+            MySqlCommand MyCommand = new MySqlCommand("SELECT Number,Name,Stars,Vision,Region,Weapon,Gender FROM characters", connection.Connection());
             MySqlDataAdapter MyAdapter = new MySqlDataAdapter();
             DataTable MyTable = new DataTable();
 
@@ -74,16 +74,16 @@ namespace GenshinImpactDatabase
             return MyTable;
         }
 
-       public bool EditCharacter(String Name, String Stars, String Vision, String Region, String Weapon, String Gender, int CharID)
+       public bool EditCharacter(String Name, String Stars, String Vision, String Region, String Weapon, String Gender, int Number)
         {
             MySqlCommand myCommand = new MySqlCommand();
             String updateCharacters = "UPDATE `characters` SET  " +
                 "`Name` = @name,`Stars` = @stars, `Vision` = @vis, `Region` = @reg, `Weapon` = @wpn, `Gender` = @gndr " +
-                "WHERE CharID = @charid ";
+                "WHERE Number = @number ";
             myCommand.CommandText = updateCharacters;
             myCommand.Connection = connection.Connection();
 
-            myCommand.Parameters.Add("@charid", MySqlDbType.UInt32).Value = CharID;
+            myCommand.Parameters.Add("@number", MySqlDbType.UInt32).Value = Number;
             myCommand.Parameters.Add("@name", MySqlDbType.VarChar).Value = Name;
             myCommand.Parameters.Add("@stars", MySqlDbType.VarChar).Value = Stars;
             myCommand.Parameters.Add("@vis", MySqlDbType.VarChar).Value = Vision;
