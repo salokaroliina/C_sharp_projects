@@ -14,6 +14,7 @@ namespace GenshinImpactDatabase
 {
     public partial class GenshinImpactDB : Form
     {
+
         // Opening a connection to database
         MySqlConnection connection = new MySqlConnection("datasource=localhost; port=3306;username=root;password=;database=" + "studypoint" + ";SSL Mode = None");
         CHARACTERS characters = new CHARACTERS();
@@ -25,13 +26,13 @@ namespace GenshinImpactDatabase
 
         }
 
+
         // Method to close all the panels
         private void CloseAll(object sender, EventArgs e)
         {
             HomePL.Visible = false;
             AddNewPL.Visible = false;
             CharactersPL.Visible = false;
-            StatsPL.Visible = false;
             EditCharacterPL.Visible = false;
         }
 
@@ -85,12 +86,7 @@ namespace GenshinImpactDatabase
 
         }
 
-        // Opens the stats-panel
-        private void StatsBtn_Click(object sender, EventArgs e)
-        {
-            CloseAll(sender, e);
-            StatsPL.Visible = true;
-        }
+       
 
         // Button to return to homepage
         private void HomeBtn_Click(object sender, EventArgs e)
@@ -242,6 +238,5 @@ namespace GenshinImpactDatabase
             }
         }
 
-       
     }
 }

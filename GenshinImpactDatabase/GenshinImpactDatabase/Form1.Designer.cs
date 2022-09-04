@@ -54,9 +54,6 @@
             this.CharactersHomeBtn = new System.Windows.Forms.Button();
             this.CharactersDTG = new System.Windows.Forms.DataGridView();
             this.MyCharactersLB = new System.Windows.Forms.Label();
-            this.StatsPL = new System.Windows.Forms.Panel();
-            this.StatsHomeBtn = new System.Windows.Forms.Button();
-            this.StatsLB = new System.Windows.Forms.Label();
             this.EditCharacterPL = new System.Windows.Forms.Panel();
             this.EditHomeBtn = new System.Windows.Forms.Button();
             this.CharIDTB = new System.Windows.Forms.TextBox();
@@ -78,11 +75,9 @@
             this.HomeHeaderLB = new System.Windows.Forms.Label();
             this.AddNewBtn = new System.Windows.Forms.Button();
             this.CharactersBtn = new System.Windows.Forms.Button();
-            this.StatsBtn = new System.Windows.Forms.Button();
             this.AddNewPL.SuspendLayout();
             this.CharactersPL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CharactersDTG)).BeginInit();
-            this.StatsPL.SuspendLayout();
             this.EditCharacterPL.SuspendLayout();
             this.HomePL.SuspendLayout();
             this.SuspendLayout();
@@ -343,6 +338,7 @@
             // 
             // CharactersDTG
             // 
+            this.CharactersDTG.AllowUserToAddRows = false;
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.CharactersDTG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.CharactersDTG.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -410,48 +406,6 @@
             this.MyCharactersLB.Size = new System.Drawing.Size(216, 63);
             this.MyCharactersLB.TabIndex = 0;
             this.MyCharactersLB.Text = "My characters";
-            // 
-            // StatsPL
-            // 
-            this.StatsPL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.StatsPL.BackgroundImage = global::GenshinImpactDatabase.Properties.Resources.basebg;
-            this.StatsPL.Controls.Add(this.StatsHomeBtn);
-            this.StatsPL.Controls.Add(this.StatsLB);
-            this.StatsPL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.StatsPL.Location = new System.Drawing.Point(0, 0);
-            this.StatsPL.Name = "StatsPL";
-            this.StatsPL.Size = new System.Drawing.Size(968, 605);
-            this.StatsPL.TabIndex = 1;
-            this.StatsPL.Visible = false;
-            // 
-            // StatsHomeBtn
-            // 
-            this.StatsHomeBtn.BackColor = System.Drawing.Color.Transparent;
-            this.StatsHomeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StatsHomeBtn.FlatAppearance.BorderSize = 0;
-            this.StatsHomeBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.StatsHomeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.StatsHomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StatsHomeBtn.Font = new System.Drawing.Font("Microsoft Uighur", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatsHomeBtn.Location = new System.Drawing.Point(0, 0);
-            this.StatsHomeBtn.Name = "StatsHomeBtn";
-            this.StatsHomeBtn.Size = new System.Drawing.Size(61, 55);
-            this.StatsHomeBtn.TabIndex = 17;
-            this.StatsHomeBtn.Text = "⌂";
-            this.StatsHomeBtn.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.StatsHomeBtn.UseVisualStyleBackColor = false;
-            this.StatsHomeBtn.Click += new System.EventHandler(this.StatsHomeBtn_Click);
-            // 
-            // StatsLB
-            // 
-            this.StatsLB.AutoSize = true;
-            this.StatsLB.BackColor = System.Drawing.Color.Transparent;
-            this.StatsLB.Font = new System.Drawing.Font("Microsoft Uighur", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatsLB.Location = new System.Drawing.Point(390, 15);
-            this.StatsLB.Name = "StatsLB";
-            this.StatsLB.Size = new System.Drawing.Size(217, 63);
-            this.StatsLB.TabIndex = 0;
-            this.StatsLB.Text = "Stats for nerds";
             // 
             // EditCharacterPL
             // 
@@ -695,7 +649,6 @@
             this.HomePL.Controls.Add(this.HomeHeaderLB);
             this.HomePL.Controls.Add(this.AddNewBtn);
             this.HomePL.Controls.Add(this.CharactersBtn);
-            this.HomePL.Controls.Add(this.StatsBtn);
             this.HomePL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.HomePL.Location = new System.Drawing.Point(0, 0);
             this.HomePL.Name = "HomePL";
@@ -736,28 +689,15 @@
             this.CharactersBtn.UseVisualStyleBackColor = true;
             this.CharactersBtn.Click += new System.EventHandler(this.CharactersBtn_Click);
             // 
-            // StatsBtn
-            // 
-            this.StatsBtn.BackColor = System.Drawing.Color.Transparent;
-            this.StatsBtn.Font = new System.Drawing.Font("Microsoft Uighur", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatsBtn.Location = new System.Drawing.Point(368, 377);
-            this.StatsBtn.Name = "StatsBtn";
-            this.StatsBtn.Size = new System.Drawing.Size(239, 51);
-            this.StatsBtn.TabIndex = 3;
-            this.StatsBtn.Text = "Stats for nerds";
-            this.StatsBtn.UseVisualStyleBackColor = false;
-            this.StatsBtn.Click += new System.EventHandler(this.StatsBtn_Click);
-            // 
             // GenshinImpactDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(968, 605);
-            this.Controls.Add(this.CharactersPL);
             this.Controls.Add(this.HomePL);
+            this.Controls.Add(this.CharactersPL);
             this.Controls.Add(this.AddNewPL);
             this.Controls.Add(this.EditCharacterPL);
-            this.Controls.Add(this.StatsPL);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GenshinImpactDB";
@@ -767,8 +707,6 @@
             this.CharactersPL.ResumeLayout(false);
             this.CharactersPL.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CharactersDTG)).EndInit();
-            this.StatsPL.ResumeLayout(false);
-            this.StatsPL.PerformLayout();
             this.EditCharacterPL.ResumeLayout(false);
             this.EditCharacterPL.PerformLayout();
             this.HomePL.ResumeLayout(false);
@@ -782,14 +720,11 @@
         private System.Windows.Forms.Label HomeHeaderLB;
         private System.Windows.Forms.Button AddNewBtn;
         private System.Windows.Forms.Button CharactersBtn;
-        private System.Windows.Forms.Button StatsBtn;
         private System.Windows.Forms.Panel AddNewPL;
         private System.Windows.Forms.Label AddNewHeaderLB;
         private System.Windows.Forms.Panel HomePL;
         private System.Windows.Forms.Panel CharactersPL;
         private System.Windows.Forms.Label MyCharactersLB;
-        private System.Windows.Forms.Panel StatsPL;
-        private System.Windows.Forms.Label StatsLB;
         private System.Windows.Forms.ComboBox GenderCB;
         private System.Windows.Forms.ComboBox WeaponCB;
         private System.Windows.Forms.ComboBox RegionCB;
@@ -822,7 +757,6 @@
         private System.Windows.Forms.TextBox CharIDTB;
         private System.Windows.Forms.Button AddNewHomeBtn;
         private System.Windows.Forms.Button CharactersHomeBtn;
-        private System.Windows.Forms.Button StatsHomeBtn;
         private System.Windows.Forms.Button EditHomeBtn;
     }
 }
