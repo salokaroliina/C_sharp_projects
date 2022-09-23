@@ -156,5 +156,14 @@
   <ItemGroup>
     <None Include="Resources\basebg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luminebg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aetherbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\travelerbg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

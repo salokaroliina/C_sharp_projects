@@ -124,6 +124,12 @@
   <data name="cryobg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cryobg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="basebg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\basebg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aetherbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aetherbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="geobg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\geobg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,7 +148,10 @@
   <data name="pyrobg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pyrobg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="basebg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\basebg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="luminebg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\luminebg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="travelerbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\travelerbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

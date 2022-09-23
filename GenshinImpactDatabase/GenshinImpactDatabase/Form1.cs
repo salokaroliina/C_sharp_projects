@@ -136,8 +136,8 @@ namespace GenshinImpactDatabase
         // The background changes depending of the vision (element) of the character
         private void BackgroundChange(object sender, EventArgs e)
         {
-            var BgImage = CharactersDTG.CurrentRow.Cells[3].Value.ToString();
-
+            var Vision = CharactersDTG.CurrentRow.Cells[3].Value.ToString();
+        
             Image pyro = new Bitmap(@"C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\Resources\pyrobg.png");
             Image geo = new Bitmap(@"C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\Resources\geobg.png");
             Image hydro = new Bitmap(@"C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\Resources\hydrobg.png");
@@ -145,8 +145,10 @@ namespace GenshinImpactDatabase
             Image dendro = new Bitmap(@"C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\Resources\dendrobg.png");
             Image anemo = new Bitmap(@"C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\Resources\anemobg.png");
             Image electro = new Bitmap(@"C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\Resources\electrobg.png");
+            Image traveler = new Bitmap(@"C:\Users\salok\source\repos\C_sharp_projects\GenshinImpactDatabase\GenshinImpactDatabase\Resources\travelerbg.png");
 
-            switch (BgImage)
+
+            switch (Vision)
             {
                 case "Pyro":
                     EditCharacterPL.BackgroundImage = pyro;
@@ -170,7 +172,7 @@ namespace GenshinImpactDatabase
                     EditCharacterPL.BackgroundImage = electro;
                     break;
                 default:
-                    EditCharacterPL.BackgroundImage = anemo;
+                    EditCharacterPL.BackgroundImage = traveler;
                     break;
             }
         }

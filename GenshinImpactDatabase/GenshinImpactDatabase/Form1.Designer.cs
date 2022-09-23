@@ -34,22 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GenshinImpactDB));
-            this.AddNewPL = new System.Windows.Forms.Panel();
-            this.AddNewHomeBtn = new System.Windows.Forms.Button();
-            this.StarsCB = new System.Windows.Forms.ComboBox();
-            this.StarsLB = new System.Windows.Forms.Label();
-            this.AddCharacterBtn = new System.Windows.Forms.Button();
-            this.GenderCB = new System.Windows.Forms.ComboBox();
-            this.WeaponCB = new System.Windows.Forms.ComboBox();
-            this.RegionCB = new System.Windows.Forms.ComboBox();
-            this.VisionCB = new System.Windows.Forms.ComboBox();
-            this.NameTB = new System.Windows.Forms.TextBox();
-            this.GenderLB = new System.Windows.Forms.Label();
-            this.WeaponLB = new System.Windows.Forms.Label();
-            this.RegionLB = new System.Windows.Forms.Label();
-            this.VisionLB = new System.Windows.Forms.Label();
-            this.NameLB = new System.Windows.Forms.Label();
-            this.AddNewHeaderLB = new System.Windows.Forms.Label();
             this.CharactersPL = new System.Windows.Forms.Panel();
             this.CharactersHomeBtn = new System.Windows.Forms.Button();
             this.CharactersDTG = new System.Windows.Forms.DataGridView();
@@ -75,235 +59,28 @@
             this.HomeHeaderLB = new System.Windows.Forms.Label();
             this.AddNewBtn = new System.Windows.Forms.Button();
             this.CharactersBtn = new System.Windows.Forms.Button();
-            this.AddNewPL.SuspendLayout();
+            this.AddNewPL = new System.Windows.Forms.Panel();
+            this.AddNewHomeBtn = new System.Windows.Forms.Button();
+            this.StarsCB = new System.Windows.Forms.ComboBox();
+            this.StarsLB = new System.Windows.Forms.Label();
+            this.AddCharacterBtn = new System.Windows.Forms.Button();
+            this.GenderCB = new System.Windows.Forms.ComboBox();
+            this.WeaponCB = new System.Windows.Forms.ComboBox();
+            this.RegionCB = new System.Windows.Forms.ComboBox();
+            this.VisionCB = new System.Windows.Forms.ComboBox();
+            this.NameTB = new System.Windows.Forms.TextBox();
+            this.GenderLB = new System.Windows.Forms.Label();
+            this.WeaponLB = new System.Windows.Forms.Label();
+            this.RegionLB = new System.Windows.Forms.Label();
+            this.VisionLB = new System.Windows.Forms.Label();
+            this.NameLB = new System.Windows.Forms.Label();
+            this.AddNewHeaderLB = new System.Windows.Forms.Label();
             this.CharactersPL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CharactersDTG)).BeginInit();
             this.EditCharacterPL.SuspendLayout();
             this.HomePL.SuspendLayout();
+            this.AddNewPL.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // AddNewPL
-            // 
-            this.AddNewPL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.AddNewPL.BackgroundImage = global::GenshinImpactDatabase.Properties.Resources.basebg;
-            this.AddNewPL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.AddNewPL.Controls.Add(this.AddNewHomeBtn);
-            this.AddNewPL.Controls.Add(this.StarsCB);
-            this.AddNewPL.Controls.Add(this.StarsLB);
-            this.AddNewPL.Controls.Add(this.AddCharacterBtn);
-            this.AddNewPL.Controls.Add(this.GenderCB);
-            this.AddNewPL.Controls.Add(this.WeaponCB);
-            this.AddNewPL.Controls.Add(this.RegionCB);
-            this.AddNewPL.Controls.Add(this.VisionCB);
-            this.AddNewPL.Controls.Add(this.NameTB);
-            this.AddNewPL.Controls.Add(this.GenderLB);
-            this.AddNewPL.Controls.Add(this.WeaponLB);
-            this.AddNewPL.Controls.Add(this.RegionLB);
-            this.AddNewPL.Controls.Add(this.VisionLB);
-            this.AddNewPL.Controls.Add(this.NameLB);
-            this.AddNewPL.Controls.Add(this.AddNewHeaderLB);
-            this.AddNewPL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddNewPL.Location = new System.Drawing.Point(0, 0);
-            this.AddNewPL.Name = "AddNewPL";
-            this.AddNewPL.Size = new System.Drawing.Size(968, 605);
-            this.AddNewPL.TabIndex = 4;
-            this.AddNewPL.Visible = false;
-            // 
-            // AddNewHomeBtn
-            // 
-            this.AddNewHomeBtn.BackColor = System.Drawing.Color.Transparent;
-            this.AddNewHomeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddNewHomeBtn.FlatAppearance.BorderSize = 0;
-            this.AddNewHomeBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.AddNewHomeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.AddNewHomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddNewHomeBtn.Font = new System.Drawing.Font("Microsoft Uighur", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddNewHomeBtn.Location = new System.Drawing.Point(-1, -1);
-            this.AddNewHomeBtn.Name = "AddNewHomeBtn";
-            this.AddNewHomeBtn.Size = new System.Drawing.Size(61, 55);
-            this.AddNewHomeBtn.TabIndex = 17;
-            this.AddNewHomeBtn.Text = "⌂";
-            this.AddNewHomeBtn.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.AddNewHomeBtn.UseVisualStyleBackColor = false;
-            this.AddNewHomeBtn.Click += new System.EventHandler(this.AddNewHomeBtn_Click);
-            // 
-            // StarsCB
-            // 
-            this.StarsCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StarsCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StarsCB.FormattingEnabled = true;
-            this.StarsCB.Items.AddRange(new object[] {
-            "★★★★",
-            "★★★★★"});
-            this.StarsCB.Location = new System.Drawing.Point(310, 153);
-            this.StarsCB.Name = "StarsCB";
-            this.StarsCB.Size = new System.Drawing.Size(420, 57);
-            this.StarsCB.TabIndex = 13;
-            // 
-            // StarsLB
-            // 
-            this.StarsLB.AutoSize = true;
-            this.StarsLB.BackColor = System.Drawing.Color.Transparent;
-            this.StarsLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StarsLB.Location = new System.Drawing.Point(178, 157);
-            this.StarsLB.Name = "StarsLB";
-            this.StarsLB.Size = new System.Drawing.Size(78, 49);
-            this.StarsLB.TabIndex = 12;
-            this.StarsLB.Text = "Stars:";
-            // 
-            // AddCharacterBtn
-            // 
-            this.AddCharacterBtn.BackColor = System.Drawing.Color.White;
-            this.AddCharacterBtn.FlatAppearance.BorderSize = 0;
-            this.AddCharacterBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddCharacterBtn.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddCharacterBtn.Location = new System.Drawing.Point(401, 529);
-            this.AddCharacterBtn.Name = "AddCharacterBtn";
-            this.AddCharacterBtn.Size = new System.Drawing.Size(235, 49);
-            this.AddCharacterBtn.TabIndex = 11;
-            this.AddCharacterBtn.Text = "Add character";
-            this.AddCharacterBtn.UseVisualStyleBackColor = false;
-            this.AddCharacterBtn.Click += new System.EventHandler(this.AddCharacterBtn_Click);
-            // 
-            // GenderCB
-            // 
-            this.GenderCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GenderCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GenderCB.FormattingEnabled = true;
-            this.GenderCB.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.GenderCB.Location = new System.Drawing.Point(310, 437);
-            this.GenderCB.Name = "GenderCB";
-            this.GenderCB.Size = new System.Drawing.Size(420, 57);
-            this.GenderCB.TabIndex = 10;
-            // 
-            // WeaponCB
-            // 
-            this.WeaponCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.WeaponCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WeaponCB.FormattingEnabled = true;
-            this.WeaponCB.Items.AddRange(new object[] {
-            "Sword",
-            "Bow",
-            "Claymore",
-            "Polearm",
-            "Catalyst"});
-            this.WeaponCB.Location = new System.Drawing.Point(310, 366);
-            this.WeaponCB.Name = "WeaponCB";
-            this.WeaponCB.Size = new System.Drawing.Size(420, 57);
-            this.WeaponCB.TabIndex = 9;
-            // 
-            // RegionCB
-            // 
-            this.RegionCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RegionCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegionCB.FormattingEnabled = true;
-            this.RegionCB.Items.AddRange(new object[] {
-            "Mondstadt",
-            "Liyue",
-            "Inazuma",
-            "Sumeru",
-            "Snezhnaya",
-            "None"});
-            this.RegionCB.Location = new System.Drawing.Point(310, 295);
-            this.RegionCB.Name = "RegionCB";
-            this.RegionCB.Size = new System.Drawing.Size(420, 57);
-            this.RegionCB.TabIndex = 8;
-            // 
-            // VisionCB
-            // 
-            this.VisionCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VisionCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VisionCB.FormattingEnabled = true;
-            this.VisionCB.Items.AddRange(new object[] {
-            "Anemo",
-            "Cryo",
-            "Hydro",
-            "Pyro",
-            "Geo",
-            "Electro",
-            "Dendro",
-            "All"});
-            this.VisionCB.Location = new System.Drawing.Point(310, 224);
-            this.VisionCB.Name = "VisionCB";
-            this.VisionCB.Size = new System.Drawing.Size(420, 57);
-            this.VisionCB.TabIndex = 7;
-            // 
-            // NameTB
-            // 
-            this.NameTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.NameTB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameTB.Location = new System.Drawing.Point(310, 92);
-            this.NameTB.Name = "NameTB";
-            this.NameTB.Size = new System.Drawing.Size(420, 40);
-            this.NameTB.TabIndex = 6;
-            // 
-            // GenderLB
-            // 
-            this.GenderLB.AutoSize = true;
-            this.GenderLB.BackColor = System.Drawing.Color.Transparent;
-            this.GenderLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GenderLB.Location = new System.Drawing.Point(178, 441);
-            this.GenderLB.Name = "GenderLB";
-            this.GenderLB.Size = new System.Drawing.Size(105, 49);
-            this.GenderLB.TabIndex = 5;
-            this.GenderLB.Text = "Gender:";
-            // 
-            // WeaponLB
-            // 
-            this.WeaponLB.AutoSize = true;
-            this.WeaponLB.BackColor = System.Drawing.Color.Transparent;
-            this.WeaponLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WeaponLB.Location = new System.Drawing.Point(174, 370);
-            this.WeaponLB.Name = "WeaponLB";
-            this.WeaponLB.Size = new System.Drawing.Size(115, 49);
-            this.WeaponLB.TabIndex = 4;
-            this.WeaponLB.Text = "Weapon:";
-            // 
-            // RegionLB
-            // 
-            this.RegionLB.AutoSize = true;
-            this.RegionLB.BackColor = System.Drawing.Color.Transparent;
-            this.RegionLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegionLB.Location = new System.Drawing.Point(174, 299);
-            this.RegionLB.Name = "RegionLB";
-            this.RegionLB.Size = new System.Drawing.Size(102, 49);
-            this.RegionLB.TabIndex = 3;
-            this.RegionLB.Text = "Region:";
-            // 
-            // VisionLB
-            // 
-            this.VisionLB.AutoSize = true;
-            this.VisionLB.BackColor = System.Drawing.Color.Transparent;
-            this.VisionLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VisionLB.Location = new System.Drawing.Point(174, 228);
-            this.VisionLB.Name = "VisionLB";
-            this.VisionLB.Size = new System.Drawing.Size(95, 49);
-            this.VisionLB.TabIndex = 2;
-            this.VisionLB.Text = "Vision:";
-            // 
-            // NameLB
-            // 
-            this.NameLB.AutoSize = true;
-            this.NameLB.BackColor = System.Drawing.Color.Transparent;
-            this.NameLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameLB.Location = new System.Drawing.Point(178, 91);
-            this.NameLB.Name = "NameLB";
-            this.NameLB.Size = new System.Drawing.Size(91, 49);
-            this.NameLB.TabIndex = 1;
-            this.NameLB.Text = "Name:";
-            // 
-            // AddNewHeaderLB
-            // 
-            this.AddNewHeaderLB.AutoSize = true;
-            this.AddNewHeaderLB.BackColor = System.Drawing.Color.Transparent;
-            this.AddNewHeaderLB.Font = new System.Drawing.Font("Microsoft Uighur", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddNewHeaderLB.Location = new System.Drawing.Point(357, 15);
-            this.AddNewHeaderLB.Name = "AddNewHeaderLB";
-            this.AddNewHeaderLB.Size = new System.Drawing.Size(277, 63);
-            this.AddNewHeaderLB.TabIndex = 0;
-            this.AddNewHeaderLB.Text = "Add new character";
             // 
             // CharactersPL
             // 
@@ -645,7 +422,7 @@
             // HomePL
             // 
             this.HomePL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.HomePL.BackgroundImage = global::GenshinImpactDatabase.Properties.Resources.basebg;
+            this.HomePL.BackgroundImage = global::GenshinImpactDatabase.Properties.Resources.luminebg;
             this.HomePL.Controls.Add(this.HomeHeaderLB);
             this.HomePL.Controls.Add(this.AddNewBtn);
             this.HomePL.Controls.Add(this.CharactersBtn);
@@ -689,6 +466,229 @@
             this.CharactersBtn.UseVisualStyleBackColor = true;
             this.CharactersBtn.Click += new System.EventHandler(this.CharactersBtn_Click);
             // 
+            // AddNewPL
+            // 
+            this.AddNewPL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.AddNewPL.BackgroundImage = global::GenshinImpactDatabase.Properties.Resources.basebg;
+            this.AddNewPL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AddNewPL.Controls.Add(this.AddNewHomeBtn);
+            this.AddNewPL.Controls.Add(this.StarsCB);
+            this.AddNewPL.Controls.Add(this.StarsLB);
+            this.AddNewPL.Controls.Add(this.AddCharacterBtn);
+            this.AddNewPL.Controls.Add(this.GenderCB);
+            this.AddNewPL.Controls.Add(this.WeaponCB);
+            this.AddNewPL.Controls.Add(this.RegionCB);
+            this.AddNewPL.Controls.Add(this.VisionCB);
+            this.AddNewPL.Controls.Add(this.NameTB);
+            this.AddNewPL.Controls.Add(this.GenderLB);
+            this.AddNewPL.Controls.Add(this.WeaponLB);
+            this.AddNewPL.Controls.Add(this.RegionLB);
+            this.AddNewPL.Controls.Add(this.VisionLB);
+            this.AddNewPL.Controls.Add(this.NameLB);
+            this.AddNewPL.Controls.Add(this.AddNewHeaderLB);
+            this.AddNewPL.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddNewPL.Location = new System.Drawing.Point(0, 0);
+            this.AddNewPL.Name = "AddNewPL";
+            this.AddNewPL.Size = new System.Drawing.Size(968, 605);
+            this.AddNewPL.TabIndex = 4;
+            this.AddNewPL.Visible = false;
+            // 
+            // AddNewHomeBtn
+            // 
+            this.AddNewHomeBtn.BackColor = System.Drawing.Color.Transparent;
+            this.AddNewHomeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddNewHomeBtn.FlatAppearance.BorderSize = 0;
+            this.AddNewHomeBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AddNewHomeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.AddNewHomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddNewHomeBtn.Font = new System.Drawing.Font("Microsoft Uighur", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddNewHomeBtn.Location = new System.Drawing.Point(-1, -1);
+            this.AddNewHomeBtn.Name = "AddNewHomeBtn";
+            this.AddNewHomeBtn.Size = new System.Drawing.Size(61, 55);
+            this.AddNewHomeBtn.TabIndex = 17;
+            this.AddNewHomeBtn.Text = "⌂";
+            this.AddNewHomeBtn.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.AddNewHomeBtn.UseVisualStyleBackColor = false;
+            this.AddNewHomeBtn.Click += new System.EventHandler(this.AddNewHomeBtn_Click);
+            // 
+            // StarsCB
+            // 
+            this.StarsCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StarsCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StarsCB.FormattingEnabled = true;
+            this.StarsCB.Items.AddRange(new object[] {
+            "★★★★",
+            "★★★★★"});
+            this.StarsCB.Location = new System.Drawing.Point(310, 153);
+            this.StarsCB.Name = "StarsCB";
+            this.StarsCB.Size = new System.Drawing.Size(420, 57);
+            this.StarsCB.TabIndex = 13;
+            // 
+            // StarsLB
+            // 
+            this.StarsLB.AutoSize = true;
+            this.StarsLB.BackColor = System.Drawing.Color.Transparent;
+            this.StarsLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StarsLB.Location = new System.Drawing.Point(178, 157);
+            this.StarsLB.Name = "StarsLB";
+            this.StarsLB.Size = new System.Drawing.Size(78, 49);
+            this.StarsLB.TabIndex = 12;
+            this.StarsLB.Text = "Stars:";
+            // 
+            // AddCharacterBtn
+            // 
+            this.AddCharacterBtn.BackColor = System.Drawing.Color.White;
+            this.AddCharacterBtn.FlatAppearance.BorderSize = 0;
+            this.AddCharacterBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddCharacterBtn.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddCharacterBtn.Location = new System.Drawing.Point(401, 529);
+            this.AddCharacterBtn.Name = "AddCharacterBtn";
+            this.AddCharacterBtn.Size = new System.Drawing.Size(235, 49);
+            this.AddCharacterBtn.TabIndex = 11;
+            this.AddCharacterBtn.Text = "Add character";
+            this.AddCharacterBtn.UseVisualStyleBackColor = false;
+            this.AddCharacterBtn.Click += new System.EventHandler(this.AddCharacterBtn_Click);
+            // 
+            // GenderCB
+            // 
+            this.GenderCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GenderCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GenderCB.FormattingEnabled = true;
+            this.GenderCB.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.GenderCB.Location = new System.Drawing.Point(310, 437);
+            this.GenderCB.Name = "GenderCB";
+            this.GenderCB.Size = new System.Drawing.Size(420, 57);
+            this.GenderCB.TabIndex = 10;
+            // 
+            // WeaponCB
+            // 
+            this.WeaponCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.WeaponCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WeaponCB.FormattingEnabled = true;
+            this.WeaponCB.Items.AddRange(new object[] {
+            "Sword",
+            "Bow",
+            "Claymore",
+            "Polearm",
+            "Catalyst"});
+            this.WeaponCB.Location = new System.Drawing.Point(310, 366);
+            this.WeaponCB.Name = "WeaponCB";
+            this.WeaponCB.Size = new System.Drawing.Size(420, 57);
+            this.WeaponCB.TabIndex = 9;
+            // 
+            // RegionCB
+            // 
+            this.RegionCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RegionCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegionCB.FormattingEnabled = true;
+            this.RegionCB.Items.AddRange(new object[] {
+            "Mondstadt",
+            "Liyue",
+            "Inazuma",
+            "Sumeru",
+            "Snezhnaya",
+            "None"});
+            this.RegionCB.Location = new System.Drawing.Point(310, 295);
+            this.RegionCB.Name = "RegionCB";
+            this.RegionCB.Size = new System.Drawing.Size(420, 57);
+            this.RegionCB.TabIndex = 8;
+            // 
+            // VisionCB
+            // 
+            this.VisionCB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VisionCB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VisionCB.FormattingEnabled = true;
+            this.VisionCB.Items.AddRange(new object[] {
+            "Anemo",
+            "Cryo",
+            "Hydro",
+            "Pyro",
+            "Geo",
+            "Electro",
+            "Dendro",
+            "All"});
+            this.VisionCB.Location = new System.Drawing.Point(310, 224);
+            this.VisionCB.Name = "VisionCB";
+            this.VisionCB.Size = new System.Drawing.Size(420, 57);
+            this.VisionCB.TabIndex = 7;
+            // 
+            // NameTB
+            // 
+            this.NameTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.NameTB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameTB.Location = new System.Drawing.Point(310, 92);
+            this.NameTB.Name = "NameTB";
+            this.NameTB.Size = new System.Drawing.Size(420, 40);
+            this.NameTB.TabIndex = 6;
+            // 
+            // GenderLB
+            // 
+            this.GenderLB.AutoSize = true;
+            this.GenderLB.BackColor = System.Drawing.Color.Transparent;
+            this.GenderLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GenderLB.Location = new System.Drawing.Point(178, 441);
+            this.GenderLB.Name = "GenderLB";
+            this.GenderLB.Size = new System.Drawing.Size(105, 49);
+            this.GenderLB.TabIndex = 5;
+            this.GenderLB.Text = "Gender:";
+            // 
+            // WeaponLB
+            // 
+            this.WeaponLB.AutoSize = true;
+            this.WeaponLB.BackColor = System.Drawing.Color.Transparent;
+            this.WeaponLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WeaponLB.Location = new System.Drawing.Point(174, 370);
+            this.WeaponLB.Name = "WeaponLB";
+            this.WeaponLB.Size = new System.Drawing.Size(115, 49);
+            this.WeaponLB.TabIndex = 4;
+            this.WeaponLB.Text = "Weapon:";
+            // 
+            // RegionLB
+            // 
+            this.RegionLB.AutoSize = true;
+            this.RegionLB.BackColor = System.Drawing.Color.Transparent;
+            this.RegionLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegionLB.Location = new System.Drawing.Point(174, 299);
+            this.RegionLB.Name = "RegionLB";
+            this.RegionLB.Size = new System.Drawing.Size(102, 49);
+            this.RegionLB.TabIndex = 3;
+            this.RegionLB.Text = "Region:";
+            // 
+            // VisionLB
+            // 
+            this.VisionLB.AutoSize = true;
+            this.VisionLB.BackColor = System.Drawing.Color.Transparent;
+            this.VisionLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VisionLB.Location = new System.Drawing.Point(174, 228);
+            this.VisionLB.Name = "VisionLB";
+            this.VisionLB.Size = new System.Drawing.Size(95, 49);
+            this.VisionLB.TabIndex = 2;
+            this.VisionLB.Text = "Vision:";
+            // 
+            // NameLB
+            // 
+            this.NameLB.AutoSize = true;
+            this.NameLB.BackColor = System.Drawing.Color.Transparent;
+            this.NameLB.Font = new System.Drawing.Font("Microsoft Uighur", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameLB.Location = new System.Drawing.Point(178, 91);
+            this.NameLB.Name = "NameLB";
+            this.NameLB.Size = new System.Drawing.Size(91, 49);
+            this.NameLB.TabIndex = 1;
+            this.NameLB.Text = "Name:";
+            // 
+            // AddNewHeaderLB
+            // 
+            this.AddNewHeaderLB.AutoSize = true;
+            this.AddNewHeaderLB.BackColor = System.Drawing.Color.Transparent;
+            this.AddNewHeaderLB.Font = new System.Drawing.Font("Microsoft Uighur", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddNewHeaderLB.Location = new System.Drawing.Point(357, 15);
+            this.AddNewHeaderLB.Name = "AddNewHeaderLB";
+            this.AddNewHeaderLB.Size = new System.Drawing.Size(277, 63);
+            this.AddNewHeaderLB.TabIndex = 0;
+            this.AddNewHeaderLB.Text = "Add new character";
+            // 
             // GenshinImpactDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -702,8 +702,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GenshinImpactDB";
             this.Text = "Genshin Impact Database";
-            this.AddNewPL.ResumeLayout(false);
-            this.AddNewPL.PerformLayout();
             this.CharactersPL.ResumeLayout(false);
             this.CharactersPL.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CharactersDTG)).EndInit();
@@ -711,6 +709,8 @@
             this.EditCharacterPL.PerformLayout();
             this.HomePL.ResumeLayout(false);
             this.HomePL.PerformLayout();
+            this.AddNewPL.ResumeLayout(false);
+            this.AddNewPL.PerformLayout();
             this.ResumeLayout(false);
 
         }

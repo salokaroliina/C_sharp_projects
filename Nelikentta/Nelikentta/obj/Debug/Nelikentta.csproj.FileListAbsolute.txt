@@ -1,0 +1,11 @@
+C:\Users\salok\source\repos\C_sharp_projects\Nelikentta\Nelikentta\bin\Debug\Nelikentta.exe.config
+C:\Users\salok\source\repos\C_sharp_projects\Nelikentta\Nelikentta\bin\Debug\Nelikentta.exe
+C:\Users\salok\source\repos\C_sharp_projects\Nelikentta\Nelikentta\bin\Debug\Nelikentta.pdb
+C:\Users\salok\source\repos\C_sharp_projects\Nelikentta\Nelikentta\obj\Debug\Nelikentta.csproj.AssemblyReference.cache
+C:\Users\salok\source\repos\C_sharp_projects\Nelikentta\Nelikentta\obj\Debug\Nelikentta.csproj.SuggestedBindingRedirects.cache
+C:\Users\salok\source\repos\C_sharp_projects\Nelikentta\Nelikentta\obj\Debug\Nelikentta.Form1.resources
+C:\Users\salok\source\repos\C_sharp_projects\Nelikentta\Nelikentta\obj\Debug\Nelikentta.Properties.Resources.resources
+C:\Users\salok\source\repos\C_sharp_projects\Nelikentta\Nelikentta\obj\Debug\Nelikentta.csproj.GenerateResource.cache
+C:\Users\salok\source\repos\C_sharp_projects\Nelikentta\Nelikentta\obj\Debug\Nelikentta.csproj.CoreCompileInputs.cache
+C:\Users\salok\source\repos\C_sharp_projects\Nelikentta\Nelikentta\obj\Debug\Nelikentta.exe
+C:\Users\salok\source\repos\C_sharp_projects\Nelikentta\Nelikentta\obj\Debug\Nelikentta.pdb

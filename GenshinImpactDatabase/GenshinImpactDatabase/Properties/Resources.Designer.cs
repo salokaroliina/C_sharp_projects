@@ -63,6 +63,16 @@ namespace GenshinImpactDatabase.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aetherbg {
+            get {
+                object obj = ResourceManager.GetObject("aetherbg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap anemobg {
             get {
                 object obj = ResourceManager.GetObject("anemobg", resourceCulture);
@@ -133,6 +143,16 @@ namespace GenshinImpactDatabase.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap luminebg {
+            get {
+                object obj = ResourceManager.GetObject("luminebg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap primo_simple {
             get {
                 object obj = ResourceManager.GetObject("primo_simple", resourceCulture);
@@ -146,6 +166,16 @@ namespace GenshinImpactDatabase.Properties {
         internal static System.Drawing.Bitmap pyrobg {
             get {
                 object obj = ResourceManager.GetObject("pyrobg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap travelerbg {
+            get {
+                object obj = ResourceManager.GetObject("travelerbg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
