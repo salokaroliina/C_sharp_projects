@@ -7,44 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 using Newtonsoft.Json;
 
 namespace JsonVisTestausta
 {
-    public class Student
-    {
-        public string name
-        {
-            get;
-            set;
-        }
-    }
-
-    public class Universities
-    {
-        public string university
-        {
-            get;
-            set;
-        }
-
-        public IList<Student> students
-        {
-            get;
-            set;
-        }
-    }
-    public class ClassUniversities
-    {
-        public Universities universities
-        {
-            get;
-            set;
-        }
-    }
-
     public partial class Form1 : Form
     {
+        Universities universities = new Universities();
+
         public Form1()
         {
             InitializeComponent();
@@ -83,7 +54,7 @@ namespace JsonVisTestausta
 
             university1.universities.students = listStudent;
 
-            string json = JsonConvert.SerializeObject(university1);
+            string json = JsonConvert.SerializeObject(student1.name + " - " + student2.name);
 
             TiedotLB.Text = json;
         
