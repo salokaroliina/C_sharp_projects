@@ -1,0 +1,12 @@
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemoTestaus\PeliDemoTestaus\bin\Debug\PeliDemoTestaus.exe.config
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemoTestaus\PeliDemoTestaus\bin\Debug\PeliDemoTestaus.exe
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemoTestaus\PeliDemoTestaus\bin\Debug\PeliDemoTestaus.pdb
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemoTestaus\PeliDemoTestaus\obj\Debug\PeliDemoTestaus.csproj.AssemblyReference.cache
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemoTestaus\PeliDemoTestaus\obj\Debug\PeliDemoTestaus.csproj.SuggestedBindingRedirects.cache
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemoTestaus\PeliDemoTestaus\obj\Debug\PeliDemoTestaus.Form1.resources
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemoTestaus\PeliDemoTestaus\obj\Debug\PeliDemoTestaus.Properties.Resources.resources
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemoTestaus\PeliDemoTestaus\obj\Debug\PeliDemoTestaus.csproj.GenerateResource.cache
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemoTestaus\PeliDemoTestaus\obj\Debug\PeliDemoTestaus.csproj.CoreCompileInputs.cache
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemoTestaus\PeliDemoTestaus\obj\Debug\PeliDemoTestaus.exe
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemoTestaus\PeliDemoTestaus\obj\Debug\PeliDemoTestaus.pdb
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemoTestaus\PeliDemoTestaus\obj\Debug\PeliDemoTestaus.Form2.resources

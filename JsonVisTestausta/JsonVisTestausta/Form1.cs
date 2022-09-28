@@ -15,6 +15,7 @@ namespace JsonVisTestausta
     public partial class Form1 : Form
     {
         Universities universities = new Universities();
+        languages languages = new languages();
 
         public Form1()
         {
@@ -58,6 +59,32 @@ namespace JsonVisTestausta
 
             TiedotLB.Text = json;
         
+        }
+
+        private void TranslateBtn_Click(object sender, EventArgs e)
+        {
+            ClassTranslations kaannos1 = new ClassTranslations();
+
+            kaannos1.translations = new translations();
+
+            List<languages>ListTranslation = new List<languages>();
+            languages sana1 = new languages
+            {
+                finnish = "Jääkaappi"
+            };
+            languages sana2 = new languages
+            {
+                english = "Fridge"
+            };
+
+            ListTranslation.Add(sana1);
+            ListTranslation.Add(sana2);
+
+            kaannos1.translations.translateWords = ListTranslation;
+
+            string json = JsonConvert.SerializeObject(sana1.finnish + " - " + sana2.english);
+
+            TranslationsLB.Text = json;
         }
     }
 }
