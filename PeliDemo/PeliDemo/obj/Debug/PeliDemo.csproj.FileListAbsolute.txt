@@ -1,0 +1,14 @@
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemo\PeliDemo\bin\Debug\PeliDemo.exe.config
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemo\PeliDemo\bin\Debug\PeliDemo.exe
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemo\PeliDemo\bin\Debug\PeliDemo.pdb
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemo\PeliDemo\obj\Debug\PeliDemo.csproj.AssemblyReference.cache
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemo\PeliDemo\obj\Debug\PeliDemo.csproj.SuggestedBindingRedirects.cache
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemo\PeliDemo\obj\Debug\PeliDemo.StartForm.resources
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemo\PeliDemo\obj\Debug\PeliDemo.Game.resources
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemo\PeliDemo\obj\Debug\PeliDemo.Language.resources
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemo\PeliDemo\obj\Debug\PeliDemo.Properties.Resources.resources
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemo\PeliDemo\obj\Debug\PeliDemo.csproj.GenerateResource.cache
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemo\PeliDemo\obj\Debug\PeliDemo.csproj.CoreCompileInputs.cache
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemo\PeliDemo\obj\Debug\PeliDemo.exe
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemo\PeliDemo\obj\Debug\PeliDemo.pdb
+C:\Users\salok\source\repos\C_sharp_projects\PeliDemo\PeliDemo\obj\Debug\PeliDemo.MyNewMessageBox.resources
