@@ -28,8 +28,7 @@ namespace PeliDemo
 
         // jokainen kuva saa oman metodin, johon on kirjattu teksti joka halutaan tuoda esiin klikatessa
         private string Func1(string arg)
-        {
-            
+        { 
             MessageBox.Show("On perjantai ilta. Muumipeikko, Muumipappa ja Hemuli ovat lähteneet viihteelle");
 
             return null; 
