@@ -34,6 +34,24 @@ namespace PeliDemo
             return null; 
         }
 
+        // Testasin luoda toisen dictionaryn, jota voi vaihtoehtoisesti käyttää
+        // Tarkoitus on demota laajemman sanaston käyttöä ja sen jaottelua tarpeen mukaan,
+        // jotta kaikki teksti ei olisi yhdessä isossa voidissa
+        public void FinKaksi(string word)
+        {
+            var library = new Dictionary<string , Delegate>();
+
+            library["PicturePB"] = new Func<string, string>(Func2);
+
+            var res = library[word].DynamicInvoke(word);
+        }
+
+        private string Func2(string arg)
+        {
+            MessageBox.Show("Perjantai-ilta Muumilaaksossa");
+            return null;
+        }
+
 
      
 
