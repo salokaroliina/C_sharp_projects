@@ -1,9 +1,0 @@
-C:\Users\salok\source\repos\C_sharp_projects\Json_testausta\Json_testausta\bin\Debug\Json_testausta.exe
-C:\Users\salok\source\repos\C_sharp_projects\Json_testausta\Json_testausta\bin\Debug\Json_testausta.pdb
-C:\Users\salok\source\repos\C_sharp_projects\Json_testausta\Json_testausta\bin\Debug\Newtonsoft.Json.dll
-C:\Users\salok\source\repos\C_sharp_projects\Json_testausta\Json_testausta\bin\Debug\Newtonsoft.Json.xml
-C:\Users\salok\source\repos\C_sharp_projects\Json_testausta\Json_testausta\obj\Debug\Json_testausta.csproj.AssemblyReference.cache
-C:\Users\salok\source\repos\C_sharp_projects\Json_testausta\Json_testausta\obj\Debug\Json_testausta.csproj.CoreCompileInputs.cache
-C:\Users\salok\source\repos\C_sharp_projects\Json_testausta\Json_testausta\obj\Debug\Json_testausta.csproj.CopyComplete
-C:\Users\salok\source\repos\C_sharp_projects\Json_testausta\Json_testausta\obj\Debug\Json_testausta.exe
-C:\Users\salok\source\repos\C_sharp_projects\Json_testausta\Json_testausta\obj\Debug\Json_testausta.pdb
